@@ -1,2 +1,3 @@
 🏗️ System Design
-  <img width="360" height="607" alt="image" src="https://github.com/user-attachments/assets/7a018c58-b1f2-4a47-9dec-dd7c45641fb0" />
+  <img width="1024" height="1536" alt="ChatGPT Image Apr 27, 2026, 05_01_12 PM" src="https://github.com/user-attachments/assets/5819f582-692d-441d-84ac-744c1792428d" />
+
