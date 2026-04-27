@@ -18,6 +18,5 @@ class EcommerceApp extends StatelessWidget {
         );
       },
     );
-    ;
   }
 }
