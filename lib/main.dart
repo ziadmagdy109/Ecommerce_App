@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/ecommerce_app.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(const EcommerceApp());
+  runApp(ProviderScope(child: const EcommerceApp()));
 }
