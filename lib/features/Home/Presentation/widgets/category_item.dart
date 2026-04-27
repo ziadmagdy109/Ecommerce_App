@@ -1,0 +1,48 @@
+import 'package:ecommerce_app/features/Home/Presentation/providers/products_provider.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class CategoryItem extends ConsumerWidget {
+  const CategoryItem({super.key, required this.title});
+  final String title;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Container(
+      width: 70.w,
+      margin: const EdgeInsets.symmetric(horizontal: 6),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          GestureDetector(
+            onTap: () =>
+                ref.read(selectedCategoryProvider.notifier).state = title,
+            child: Container(
+              width: 70,
+              height: 70,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.grey.shade200,
+              ),
+              child: ClipOval(
+                child: Image.asset(
+                  "assets/images/batman-silhouette-5120x2880-18270.jpg",
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            title,
+            style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+            overflow: TextOverflow.ellipsis,
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+  }
+}
