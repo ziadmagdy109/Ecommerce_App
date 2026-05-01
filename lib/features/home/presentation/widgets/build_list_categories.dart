@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/core/constants/app_strings.dart';
-import 'package:ecommerce_app/features/Home/Presentation/widgets/category_item.dart';
+import 'package:ecommerce_app/features/home/presentation/widgets/category_item.dart';
 import 'package:flutter/material.dart';
 
 class BuildListCategories extends StatelessWidget {
@@ -10,7 +10,7 @@ class BuildListCategories extends StatelessWidget {
     return ListView.builder(
       padding: EdgeInsets.zero,
       scrollDirection: Axis.horizontal,
-      physics: ClampingScrollPhysics(),
+      physics: const ClampingScrollPhysics(),
       shrinkWrap: true,
       itemCount: AppStrings.categories.length,
       itemBuilder: (context, index) =>

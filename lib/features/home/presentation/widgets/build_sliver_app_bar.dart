@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/core/constants/app_colors.dart';
-import 'package:ecommerce_app/features/Home/Data/model/product.dart';
+import 'package:ecommerce_app/features/home/data/model/product.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -15,7 +15,7 @@ class BuildSliverAppBar extends StatelessWidget {
       stretch: true,
       backgroundColor: AppColors.divider,
       flexibleSpace: FlexibleSpaceBar(
-        titlePadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        titlePadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         title: Row(
           children: [
             Expanded(
@@ -30,7 +30,7 @@ class BuildSliverAppBar extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               decoration: BoxDecoration(
                 color: AppColors.textSecondary.withValues(alpha: 0.6),
                 borderRadius: BorderRadius.circular(20),
@@ -46,7 +46,6 @@ class BuildSliverAppBar extends StatelessWidget {
             ),
           ],
         ),
-
         background: Hero(
           tag: product.id,
           child: Image.network(product.thumbnail, fit: BoxFit.cover),

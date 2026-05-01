@@ -7,9 +7,9 @@ class GetProductsWebService {
     BaseOptions options = BaseOptions(
       baseUrl: AppStrings.baseUrl,
       receiveDataWhenStatusError: true,
-      receiveTimeout: Duration(seconds: 5),
-      connectTimeout: Duration(seconds: 5),
-      sendTimeout: Duration(seconds: 5),
+      receiveTimeout: const Duration(seconds: 5),
+      connectTimeout: const Duration(seconds: 5),
+      sendTimeout: const Duration(seconds: 5),
     );
     dio = Dio(options);
   }
