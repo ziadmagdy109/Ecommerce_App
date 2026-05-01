@@ -5,7 +5,7 @@ class BuildWidgetIsEmptyData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Icon(Icons.inventory_2_outlined, size: 70, color: Colors.grey),

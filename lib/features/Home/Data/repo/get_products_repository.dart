@@ -1,5 +1,5 @@
-import 'package:ecommerce_app/features/Home/Data/model/product.dart';
-import 'package:ecommerce_app/features/Home/Data/service/get_products_web_service.dart';
+import 'package:ecommerce_app/features/home/data/model/product.dart';
+import 'package:ecommerce_app/features/home/data/service/get_products_web_service.dart';
 
 class GetProductsRepository {
   final GetProductsWebService getProductsWebService;

@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/core/constants/app_colors.dart';
 import 'package:ecommerce_app/core/routing/app_routes.dart';
-import 'package:ecommerce_app/features/Home/Data/model/product.dart';
+import 'package:ecommerce_app/features/home/data/model/product.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -13,8 +13,8 @@ class ProductItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      margin: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
-      padding: EdgeInsetsDirectional.all(4),
+      margin: const EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
+      padding: const EdgeInsetsDirectional.all(4),
       decoration: BoxDecoration(
         color: AppColors.border,
         borderRadius: BorderRadius.circular(16),
@@ -25,14 +25,14 @@ class ProductItem extends StatelessWidget {
           footer: Hero(
             tag: product.id,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: AppColors.background,
                 borderRadius: BorderRadius.vertical(
                   bottom: Radius.circular(16),
                 ),
               ),
               width: double.infinity,
-              padding: EdgeInsetsDirectional.symmetric(
+              padding: const EdgeInsetsDirectional.symmetric(
                 horizontal: 15,
                 vertical: 10,
               ),
@@ -73,7 +73,6 @@ class ProductItem extends StatelessWidget {
               color: AppColors.border,
               borderRadius: BorderRadius.circular(16),
             ),
-
             child: product.thumbnail.isNotEmpty
                 ? FadeInImage.assetNetwork(
                     height: double.infinity,

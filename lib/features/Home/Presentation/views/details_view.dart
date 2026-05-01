@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/core/constants/app_colors.dart';
-import 'package:ecommerce_app/features/Home/Data/model/product.dart';
-import 'package:ecommerce_app/features/Home/Presentation/widgets/build_sliver_app_bar.dart';
+import 'package:ecommerce_app/features/home/data/model/product.dart';
+import 'package:ecommerce_app/features/home/presentation/widgets/build_sliver_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

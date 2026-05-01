@@ -5,7 +5,7 @@ class BuildWidgetInternetError extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Icon(Icons.wifi_off, size: 50, color: Colors.red),
