@@ -3,6 +3,7 @@ import 'package:ecommerce_app/features/Home/Data/model/product.dart';
 import 'package:ecommerce_app/features/Home/Data/repo/get_products_repository.dart';
 import 'package:ecommerce_app/features/Home/Data/service/get_products_web_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/legacy.dart';
 
 final productsRepoProvider = Provider<GetProductsRepository>(
   (ref) =>
