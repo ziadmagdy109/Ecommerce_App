@@ -17,7 +17,7 @@ class HomeView extends ConsumerWidget {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(height: 25.h),
+          SizedBox(height: 24.h),
           const Flexible(child: BuildListCategories()),
           Row(
             children: [
